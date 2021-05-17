@@ -42,3 +42,23 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Deploying the Site
+
+Set up hosting with.
+
+```bash
+firebase init
+```
+
+Bundle the react project. Create an optimized react build stripping up the code that is not needed.
+
+```bash
+npm run build
+```
+
+Ensure that the code goes to the build folder.
+
+```bash
+firebase deploy
+```
